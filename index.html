@@ -880,7 +880,16 @@
   <script src="src/js/script.js"></script>
   <script src="src/js/aos.js"></script>
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.innerWidth < 768) {
+        document.querySelectorAll("[data-aos]").forEach((el) => {
+          el.setAttribute("data-aos", "fade-up"); // Mengubah efek menjadi slide-up
+        });
+      }
+    
       AOS.init();
+    });
+    
   </script>
 </body>
 
