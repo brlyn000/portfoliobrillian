@@ -7,15 +7,16 @@
   <title>Portofolio Brillian</title>
   <link rel="icon" href="img/Element/logo.png" type="image/png" />
   <link href="dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/aos.css">
 </head>
 
-<body class="bg-gray-900 dark:bg-gray-300">
+<body class="bg-gray-900 dark:bg-gray-300" >
   <main>
     <!--Hero Section start -->
-    <header id="home" class="bg-gray-700 dark:bg-gray-400 max-w-full rounded-b-full z-50 ">
+    <header id="home" class="bg-gray-700 dark:bg-gray-400 max-w-full rounded-b-full z-50 " >
       <!-- Navbar start -->
 
-      <div class="w-full text-primary fixed z-20">
+      <div class="w-full text-primary fixed z-20" data-aos="fade-down" data-aos-delay="350" data-aos-anchor-placement="center-bottom">
         <div x-data="{ open: false }"
           class="flex flex-col max-w-screen-xl px-2 md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 bg-gray-800 dark:bg-gray-400 dark:bg-opacity-50 bg-opacity-50 backdrop-filter backdrop-blur-lg  my-3 rounded-3xl mx-auto">
           <div class="p-2 flex flex-row items-center justify-between">
@@ -89,7 +90,8 @@
       <!-- Navbar End -->
       <div class="container pt-36">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 mb-7 lg:w-1/2">
+          <div class="w-full self-center px-4 mb-7 lg:w-1/2" data-aos="fade-right" data-aos-delay="350" data-aos-anchor-placement="center-bottom"
+          >
             <div class="lg:ml-20">
               <h1 class="text-white mb-2">
                 Hello, <span class="text-primary">i'm</span>
@@ -110,7 +112,7 @@
                 Talk</a>
             </div>
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="w-full self-end px-4 lg:w-1/2" data-aos="fade-left" data-aos-delay="350" data-aos-anchor-placement="center-bottom">
             <div class="relative mt-3 flex justify-center">
               <!-- SVG berada di belakang gambar -->
               <span class="absolute inset-0 flex justify-center items-center z-10">
@@ -132,25 +134,27 @@
     </header>
     <!--Hero section end -->
     <!-- Theme -->  
-    <p class="max-w-full text-center font-bold text-2xl p-4 text-primary dark:text-emerald-800 mt-20">
-      Theme
-    </p>
-    <div class="flex justify-center ">
-
-      <span class="text-sm text-slate-200 mr-2 dark:text-black font-bold ">Dark</span>
-      <input type="checkbox" class="hidden" id="toggle-dark">
-      <label for="toggle-dark">
-        <div class="w-9 h5 bg-gray-600 rounded-full p-1 cursor-pointer">
-          <div
-            class="h-4 w-4 bg-slate-100 rounded-full flex items-center toggle-circle dark:translate-x-3 transition-all duration-500 ease-in-out ">
+    <div data-aos="fade-up" data-aos-delay="250" data-aos-anchor-placement="center-bottom">
+      <p class="max-w-full text-center font-bold text-2xl p-4 text-primary dark:text-emerald-800 mt-20" >
+        Theme
+      </p>
+      <div class="flex justify-center ">
+        <span class="text-sm text-slate-200 mr-2 dark:text-black font-bold ">Dark</span>
+        <input type="checkbox" class="hidden" id="toggle-dark">
+        <label for="toggle-dark">
+          <div class="w-9 h5 bg-gray-600 rounded-full p-1 cursor-pointer">
+            <div
+              class="h-4 w-4 bg-slate-100 rounded-full flex items-center toggle-circle dark:translate-x-3 transition-all duration-500 ease-in-out ">
+            </div>
           </div>
-        </div>
-      </label>
-      <span class="text-sm text-slate-100 ml-2 dark:text-black font-bold">Light</span>
+        </label>
+        <span class="text-sm text-slate-100 ml-2 dark:text-black font-bold">Light</span>
+      </div>
     </div>
     <!-- Theme End -->
     <!-- About Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-up" data-aos-offset="300"
+    data-aos-delay="100" data-aos-easing="ease-in-out">
 
       <div class="mt-32 flex flex-wrap">
         <div class="m-auto flex justify-center lg:w-1/2">
@@ -170,7 +174,7 @@
           <!-- button -->
           <div class="flex items-center max-w-full justify-center my-5">
             <!-- instagram -->
-            <a href="https://www.instagram.com/brlyn.dv/" target="_blank"
+            <a href="https://www.instagram.com/brlyn.dv/" target="_blank" 
               class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-primary shadow-lg hover:bg-emerald-500 hover:shadow-emerald-500/50 transition duration-300 ease-in-out text-primary hover:text-white">
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20px" class="fill-current">
                 <title>Instagram</title>
@@ -221,6 +225,7 @@
       </h1>
       <div class="grid grid-cols-1 gap-6 lg:gap-10 md:grid-cols-3 md:gap-8 mx-5">
         <div
+          data-aos="flip-right" data-aos-delay="150"
           class="h-40 rounded-lg bg-gray-700 place-items-center text-primary shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
           <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="40px"
             class="border-primary m-auto mt-2 fill-current">
@@ -234,6 +239,7 @@
           </p>
         </div>
         <div
+          data-aos="flip-right" data-aos-delay="250"
           class="h-40 rounded-lg bg-gray-700 place-items-center text-primary shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
           <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="40px"
             class="border-primary m-auto mt-2 fill-current">
@@ -247,6 +253,7 @@
           </p>
         </div>
         <div
+          data-aos="flip-right" data-aos-delay="350"
           class="h-40 rounded-lg bg-gray-700 place-items-center text-primary shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
           <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="40px"
             class="border-primary m-auto mt-2 fill-current">
@@ -261,6 +268,7 @@
           </p>
         </div>
         <div
+          data-aos="flip-right" data-aos-delay="450"
           class="h-40 rounded-lg bg-gray-700 place-items-center text-primary shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
           <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="40px"
             class="border-primary m-auto mt-2 fill-current">
@@ -275,6 +283,7 @@
           </p>
         </div>
         <div
+          data-aos="flip-right" data-aos-delay="550"
           class="h-40 rounded-lg bg-gray-700 place-items-center text-primary shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
           <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="40px"
             class="border-primary m-auto mt-2 fill-current">
@@ -290,6 +299,7 @@
           </p>
         </div>
         <div
+          data-aos="flip-right" data-aos-delay="650"
           class="h-40 rounded-lg bg-gray-700 place-items-center text-primary shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
           <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="40px"
             class="border-primary m-auto mt-2 fill-current">
@@ -304,6 +314,7 @@
           </p>
         </div>
         <div
+          data-aos="flip-right" data-aos-delay="750"
           class="h-40 rounded-lg bg-gray-700 place-items-center text-primary shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
 
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" viewBox="0 0 50 50"
@@ -320,6 +331,7 @@
           </p>
         </div>
         <div
+          data-aos="flip-right" data-aos-delay="850"
           class="h-40 rounded-lg bg-gray-700 place-items-center text-primary shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
 
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" viewBox="0 0 24 24"
@@ -336,6 +348,7 @@
           </p>
         </div>
         <div
+          data-aos="flip-right" data-aos-delay="950"
           class="h-40 rounded-lg bg-gray-700 place-items-center text-primary shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
 
           <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
@@ -361,13 +374,14 @@
 
     <!-- Project Section Start -->
     <section id="portfolio" class="mt-32 rounded-xl mx-2 md:mx-4 lg:mx-8">
-      <div class="isolate pb-10 w-full rounded-xl bg-gray-800/20 ring-1 ring-primary/50 shadow-[0_10px_20px_#34d399]">
+      <div class="isolate pb-10 w-full rounded-xl bg-gray-800/20 ring-1 ring-primary/50 shadow-[0_10px_20px_#34d399]" data-aos="fade-up" data-aos-delay="150">
         <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black">
           My <span class="text-primary"> Project</span>
         </h1>
         <div class="flex flex-col justify-center md:grid md:grid-cols-2 px-5 gap-4 lg:grid-cols-3 lg:grid lg:gap-5">
           <!-- Card 1 -->
           <div
+            data-aos="fade-right" data-aos-delay="150" data-aos-anchor-placement="center-bottom"
             class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500 dark:bg-gray-500">
             <a href="#">
               <picture class="rounded-lg block overflow-hidden">
@@ -399,6 +413,7 @@
           </div>
           <!-- Card 2 -->
           <figure
+            data-aos="fade-up" data-aos-delay="250" data-aos-anchor-placement="center-bottom"
             class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg shadow dark:bg-gray-500 mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500">
             <a href="#" class="block overflow-hidden">
               <picture class="rounded-lg block overflow-hidden">
@@ -430,6 +445,7 @@
           </figure>
           <!-- Card 3 -->
           <figure
+          data-aos="fade-left" data-aos-delay="350" data-aos-anchor-placement="center-bottom"
             class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg shadow dark:bg-gray-500 mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500">
             <a href="#" class="block overflow-hidden">
               <picture class="rounded-lg block overflow-hidden">
@@ -461,6 +477,7 @@
           </figure>
           <!-- Card 4 -->
           <figure
+             data-aos="fade-right" data-aos-delay="150" data-aos-anchor-placement="center-bottom"
             class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg shadow dark:bg-gray-500 mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500">
             <a href="#" class="block overflow-hidden">
               <picture class="rounded-lg block overflow-hidden">
@@ -492,6 +509,7 @@
           </figure>
           <!-- Card 5 -->
           <figure
+             data-aos="fade-up" data-aos-delay="250" data-aos-anchor-placement="center-bottom"
             class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg shadow dark:bg-gray-500 mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500">
             <a href="#" class="block overflow-hidden">
               <picture class="rounded-lg block overflow-hidden">
@@ -527,6 +545,7 @@
           </figure>
           <!-- card 6 -->
           <figure
+             data-aos="fade-left" data-aos-delay="350" data-aos-anchor-placement="center-bottom"
             class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg shadow dark:bg-gray-500 mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500">
             <a href="#" class="block overflow-hidden">
               <picture class="rounded-lg block overflow-hidden">
@@ -568,7 +587,7 @@
           background-repeat: no-repeat;
           background-size: cover;
         ">
-      <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black">
+      <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black"  data-aos="fade-up" data-aos-delay="150" data-aos-anchor-placement="center-bottom">
         My <span class="text-primary"> Education</span>
       </h1>
       <div style="
@@ -577,9 +596,9 @@
             background-repeat: no-repeat;
             background-size: cover;
           " class="h-1/2 flex justify-center lg:h-full">
-        <img src="img/Element/logo-skandusa.png" alt="" class="w-1/4 md:w-[20%]" />
+        <img src="img/Element/logo-skandusa.png" alt="" class="w-1/4 md:w-[20%]"  data-aos="flip-right" data-aos-delay="350" data-aos-anchor-placement="center-bottom"/>
 
-        <img src="img/Element/logo-polteksi.png" width="30%" alt="" class="w-1/4 md:w-[20%]" />
+        <img src="img/Element/logo-polteksi.png" width="30%" alt="" class="w-1/4 md:w-[20%]"  data-aos="flip-right" data-aos-delay="450" data-aos-anchor-placement="center-bottom"/>
       </div>
     </section>
     <!-- Education end -->
@@ -587,12 +606,14 @@
     <!-- blog section start -->
     <section class="py-12" id="blog">
       <div class="container mx-auto px-4">
-        <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black">
+        <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black" data-aos="fade-up" data-aos-delay="150" data-aos-anchor-placement="center-bottom"
+        >
           My <span class="text-primary"> Blog</span>
         </h1>
         <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
           <!-- Card 1 -->
           <article
+             data-aos="fade-right" data-aos-delay="350" data-aos-anchor-placement="center-bottom"
             class="bg-gray-700 rounded-lg overflow-hidden border-primary border-2 hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_10px_20px_#34d399]">
             <img class="w-full h-48 object-cover p-2 rounded-xl" src="img/blog/blogMSIB.png" alt="Project Image" />
             <div class="p-6">
@@ -613,6 +634,7 @@
           </article>
           <!-- Card 2 -->
           <article
+          data-aos="fade-left" data-aos-delay="350" data-aos-anchor-placement="center-bottom"
             class="bg-gray-700 shadow-lg rounded-lg overflow-hidden border-primary border-2 hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_10px_20px_#34d399]">
             <img class="w-full h-48 object-cover p-2 rounded-xl" src="img/blog/blogKuliah.png" alt="Project Image" />
             <div class="p-6">
@@ -633,6 +655,7 @@
           </article>
           <!-- Card 3 -->
           <article
+          data-aos="fade-right" data-aos-delay="350" data-aos-anchor-placement="center-bottom"
             class="bg-gray-700 shadow-lg rounded-lg overflow-hidden border-primary border-2 hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_10px_20px_#34d399]">
             <img class="w-full h-48 object-cover p-2 rounded-xl" src="img/blog/ProjectHelu.png" alt="Project Image" />
             <div class="p-6">
@@ -652,6 +675,7 @@
           </article>
           <!-- Card 4 -->
           <article
+          data-aos="fade-left" data-aos-delay="350" data-aos-anchor-placement="center-bottom"
             class="bg-gray-700 shadow-lg rounded-lg overflow-hidden border-primary border-2 hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_10px_20px_#34d399]">
             <img class="w-full h-48 object-cover p-2 rounded-xl" src="img/blog/blogMusic.png" alt="Project Image" />
             <div class="p-6">
@@ -674,7 +698,8 @@
     </section>
     <!-- Blog Section End -->
     <!-- Contact Section Start -->
-    <section class="mx-3" id="contact">
+    <section class="mx-3" id="contact" data-aos="fade-up" data-aos-delay="250" data-aos-anchor-placement="center-bottom"
+    >
       <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black">
         Contact <span class="text-primary"> Me</span>
       </h1>
@@ -851,8 +876,12 @@
     </footer>
   </main> <!-- Footer End -->
 
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-  <script src="script.js"></script>
+  <script src="src/js/alpine.min.js" defer></script>
+  <script src="src/js/script.js"></script>
+  <script src="src/js/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
 </body>
 
 </html>
