@@ -883,12 +883,14 @@
     document.addEventListener("DOMContentLoaded", function () {
       if (window.innerWidth < 768) {
         document.querySelectorAll("[data-aos]").forEach((el) => {
-          el.setAttribute("data-aos", "fade-up"); // Mengubah efek menjadi slide-up
+          el.setAttribute("data-aos", "fade-up"); // Mengubah efek menjadi fade-up
+          el.setAttribute("data-aos-delay", "250"); // Menambahkan delay 150ms
         });
       }
     
       AOS.init();
     });
+    
     
   </script>
 </body>
