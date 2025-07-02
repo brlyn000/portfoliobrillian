@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         primary: "#34d399",
       },
+      textAlign: {
+        justify: "justify",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],
