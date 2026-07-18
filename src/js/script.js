@@ -1,5 +1,5 @@
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycby8QWaxbl1Bwpu9f4oQc8XZDzxNFepjaReRsJvcKkEBXuU6zrRw9tWaedyNBNe1fYIQ/exec";
+  "https://script.google.com/macros/s/AKfycbwNYWNUN5BKvG6v84ZsXrSWYPnL8sOIeMMl6_Bj7NJXKshcowUTFe6ufdkv44UxuDQ/exec";
 const form = document.forms["contact-form-portfolio"];
 
 const btnKirim = document.querySelector(".btn-kirim");
@@ -40,9 +40,12 @@ checkBox.addEventListener('click', function() {
 });
 
 // background mousemove
-document.addEventListener("mousemove", (e) => {
-  let x = (e.clientX / window.innerWidth) * 100;
-  let y = (e.clientY / window.innerHeight) * 100;
-  document.querySelector(".background").style.background = 
-    `radial-gradient(circle at ${x}% ${y}%, rgba(255, 255, 255, 0.2) 0%, transparent 50%)`;
-});
+const bgEl = document.querySelector(".background");
+if (bgEl) {
+  document.addEventListener("mousemove", (e) => {
+    let x = (e.clientX / window.innerWidth) * 100;
+    let y = (e.clientY / window.innerHeight) * 100;
+    bgEl.style.background =
+      `radial-gradient(circle at ${x}% ${y}%, rgba(255, 255, 255, 0.2) 0%, transparent 50%)`;
+  });
+}
